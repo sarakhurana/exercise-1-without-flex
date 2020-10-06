@@ -1,0 +1,84 @@
+header{
+    border: solid 0.5px ;
+    height: 80px;
+  }
+  .logo{
+    float: left;
+    border: solid 0.5px ;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightcoral;
+  }
+  .menu{
+    float: right;
+    border: solid 0.5px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    background-color: darkkhaki;
+  }
+  
+  .nav-mobile{
+      display: none;
+  }
+  .content{
+     border: solid 0.5px;
+     height: 700px;
+     overflow: hidden;
+  }
+  .filter{
+    float: left;
+    border-right: solid 0.5px;
+    height: 100%;
+    text-align: center;
+    background-color: lightblue;
+  }
+  .product-list{
+      list-style-type: none;
+       width: 100%;
+  }
+  .box{
+    border: solid;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+    word-break: break-word;
+    background-color: darkslategrey;  
+  }
+  
+  footer{
+    border: solid 0.5px;
+    height: 80px;
+    text-align: center;
+    background-color: rosybrown;
+  }
+
+  .col-1{ width: 10%;}
+  .col-2{width: 10%;}
+  .col-3{width: 20%}
+  .col-4{ width: 20%}
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .product-list{
+      width: calc(50%-40px);  
+      height: 100%
+    }
+    .filter{
+    display:none;
+    }
+    footer{
+      display:none;
+    }
+    .nav-desktop{
+     display: none;    
+    }
+    .nav-mobile{
+      display: inline;
+    }
+  }
